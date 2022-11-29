@@ -1,0 +1,136 @@
+.works-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 75px;
+    background-color: #EDF7FA;
+    border-radius: 30px;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (max-width:1023px){
+            align-items: center;
+        }
+    }
+    &__image{
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 0px 10px lightgray;
+        max-height: 300px;
+        @media (max-width:1023px){
+            max-width: 500px;
+            max-height: auto;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    &__image img{
+        width: 100%;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 44px;
+        @media (max-width:1023px){
+            font-size:25px;
+            text-align: center;
+        }
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        @media (max-width:1023px){
+           text-align: center;
+        }
+    }
+    @media (max-width:1023px){
+        flex-direction: column;
+    }
+    &__link{
+        color: @secondary-color;
+        text-decoration:underline;
+        transition: 0.5s;
+        &:hover{
+            color: @primary-color;
+            text-decoration: none;
+        }
+    }
+}
+.works-tags{
+    display: flex;
+    grid-area: Tags;
+    gap: 5px;
+    &_large{
+        margin-top: 45px;
+    }
+    &__tag{
+        color: white;
+        border-radius: 18px;
+        padding:8px;
+        font-weight: 700;
+        min-width: 70px;
+        text-align: center;
+    }
+    &__tag-html{
+        background-color: crimson;
+    }
+    &__tag-css{
+        background-color: cornflowerblue;
+    }
+    &__tag-js{
+        background-color: goldenrod;
+    }
+    &__tag-bt{
+        background-color: indigo;
+    }
+    &__tag-html:hover{
+        color:crimson;
+        background: white;
+    }
+    &__tag-css:hover{
+        color: cornflowerblue;
+        background: white;
+    }
+    &__tag-js:hover{
+        color: goldenrod;
+        background: white;
+    }
+    &__tag-bt:hover{
+        color: indigo;
+        background: white;
+    }
+}
+.works-container{
+margin-top: 40px;
+}
+.works-title{
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 65px;
+}
+.works-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.case-link{
+    display: block;
+}
+.hr-washed {
+	margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid gray;
+	box-shadow: 0 20px 20px -20px darkgray;
+	width: 95%;
+}
