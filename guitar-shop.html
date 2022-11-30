@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейс. Guitar shop</title>
+    <link href="less/main.less" type="text/css" rel="stylesheet/less"/>
+    <link href="css/fonts.css" rel="stylesheet"/>
+    <script src="js/less.min.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+        <div class="header">
+            <a href="works.html" class="header__point">Работы</a>
+            <a href="#blog" class="header__point">Блог</a>
+            <a href="#" class="header__point">Контакты</a> 
+        </div>
+        <div class="menu">
+            <div class="menu-button">
+                <img src="img/menu.png" alt="menu-picture">
+            </div>
+            <div class="menu-points menu-points_hidden">
+                <a href="works.html" class="menu-points__point">Работы</a>
+                <a href="#works" class="menu-points__point">Блог</a>
+                <a href="#works" class="menu-points__point">Контакты</a>
+            </div>
+        </div>      
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="works-page-title">Landing-page магазина гитар</h1>
+            <div class="works-tags works-tags_large">
+                <p class="works-tags__tag works-tags__tag-html">HTML</p>
+                <p class="works-tags__tag works-tags__tag-css">CSS</p>
+                <p class="works-tags__tag works-tags__tag-bt">BT</p>
+                <p class="works-tags__tag works-tags__tag-js">JS</p>
+            </div>
+            <time datetime="2022-11-30" class = "time">30 ноября 2022</time>
+            <p class="article-text">
+                При создании страницы я постарался добавить больше интерактивных элементов. Они делают контент более динамичным и позволяют не перегружать страницу информацией. Дизайн страницы был взят из свободного доступа.
+            </p>
+            <p class="article-text article-text_important">
+                <strong>Задача:</strong> разработать сайт компании по продаже гитар, который будет "отзывчивым" к действиям пользователя.
+            </p>
+            <section class="img-container">
+                <img src="img/case2/main-screen.png" alt="Главный экран сайта" class="img-container__img">
+            </section>
+            <p class="img-description">Основной CTA страницы - установка мобильного приложения магазина</p>
+            <h2 class="works-page-subtitle">Коротко о проекте</h2>
+            <p class="article-text">
+                Для разметки блоков была использована сетка Bootstrap. Java Script используется для элементов, предполагающих взаимодействие (переключатели, меню). Также на страницу добавлены простые CSS-анимации.  
+            </p>
+            <section class="works-numbers">
+                <div class="works-numbers__number">
+                    1 страница
+                </div>
+                <div class="works-numbers__number">
+                    8 блоков
+                </div>
+                <div class="works-numbers__number">
+                    3 интерактивных
+                </div>
+            </section>
+            <h2 class="works-page-subtitle">Основной функционал</h2>
+            <h3 class="works-page-section-title">Гамбургер - меню</h3>
+            <p class="article-text">
+                Для мобильных устройств было реализовано компактное гамбургер - меню.
+            </p>
+            <section class="img-double">
+                <img src="img/case2/menu.gif" alt="mobile menu" class="img-double__img">
+                <img src="img/case2/menu2.gif" alt="mobile menu calcelation" class="img-double__img">
+            </section>
+            <p class="img-description">Меню анимировано с помощью CSS</p>
+            <h3 class="works-page-section-title">Слайдер</h3>
+            <p class="article-text">Написан на Java Script без использования библиотек. Клик по интерактивным элементам меняет контент во всех секциях блока. Слайдер не линейный, есть возможность выбрать любой шаг вручную.</p>
+            <section class="img-container">
+                <img src="img/case2/slider.gif" alt="Слайдер" class="img-container__img">
+            </section>
+            <p class="img-description">Переключатель не переписывает текстовый контент, а изменяет его позицию на странице.</p>
+            <h3 class="works-page-section-title">Аккордеон</h3>
+            <p class="article-text">Скрывает контент, чтобы избежать "стенки текста". Анимация "разворота" секции реализована с помощью CSS.</p>
+            <section class="img-container">
+                <img src="img/case2/accordion.gif" alt="Слайдер" class="img-container__img">
+            </section>
+            <p class="img-description">С реализацией плавной анимации секций мне помог поиск по Хабру</p>
+            <h3 class="works-page-section-title">Секция с товарами</h3>
+            <p class="article-text">Показывает / скрывает контент. Позволяет не перегружать страницу и показывать пользователю только товары из интересующей его категории.</p>
+            <section class="img-container">
+                <img src="img/case2/goods.gif" alt="Товарная галлерея" class="img-container__img">
+            </section>
+            <p class="img-description">Отображение товаров происходит с помощью добавления / удаления класса - модификатора</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="social-buttons">
+                    <a href="https://vk.com/ymonitor"><img src="img/social/vk.png" alt="VK"></a>
+                    <a href="https://www.t.me/hot_marketer"><img src="img/social/tg.png" alt="Telegram"></a>
+                    <a href="https://api.whatsapp.com/send?phone=79001334098"><img src="img/social/wa.png" alt="WhatsApp"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100086349682973"><img src="img/social/fb.png" alt="Facebook"></a>
+                </div>
+                <div class="copyright">
+                    <p>Vladimir Strukov 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
