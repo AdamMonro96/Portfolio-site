@@ -9,7 +9,7 @@
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width:786px){
+    @media (max-width:991px){
         flex-direction: column;
     }
     &-links{
@@ -31,13 +31,12 @@
         }
     }
     &-card{
+        border-radius: 30px;
         background-color: white;
         box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-        border-radius: 4px;
         padding: 30px;
-        min-width: 20%;
-        max-width: 48%;
-        @media (max-width:786px){
+        width: 48%;
+        @media (max-width:991px){
             width: 100%;
             max-width: 100%;
         }
@@ -60,13 +59,40 @@
         line-height: 24px;
         margin-top: 15px;
     }
-    &-tegs{
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 10px;
+    &-card__subtitle{
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
-        margin-top: 17px;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    &-card__subtitle p{
+        color: gray !important;
+    }
+    &-tags{
+        margin-top: 20px;
+        display: flex;
+        justify-content:left;
+        gap: 20px;
+        flex-wrap: wrap;
+        @media (max-width:425px){
+            gap: 10px;
+        }
+    }
+    &-tags__tag{
+        padding: 10px;
+        font-size: 20px;
+        background-color: @primary-color;
+        color: white;
+        border-radius: 10px;
+        font-weight: 700;
+        min-width: 25%;
+        text-align: center;
+        @media (max-width:425px){
+            font-size: 16px;
+        }
+    }
+    &-tags__tag:hover{
+        background-color: @secondary-color;
     }
 }
