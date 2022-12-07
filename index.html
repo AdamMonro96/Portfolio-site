@@ -13,7 +13,7 @@
 <header>
         <div class="header">
             <a href="works.html" class="header__point">Работы</a>
-            <a href="#blog" class="header__point">Блог</a>
+            <!-- <a href="#blog" class="header__point">Блог</a> -->
             <!-- <a href="#" class="header__point">Обо мне</a>  -->
         </div>
         <div class="menu">
@@ -68,16 +68,16 @@
                                 <p>Все, что нужно для создания страниц </p>
                             </div>
                             <div class="blog-tags">
-                                <p class="blog-tags__tag">HTML 5</p>
-                                <p class="blog-tags__tag">CSS 3</p>
-                                <p class="blog-tags__tag">LESS</p>
-                                <p class="blog-tags__tag">Отзывчивая верстка</p>
-                                <p class="blog-tags__tag">БЭМ</p>
-                                <p class="blog-tags__tag">Bootstrap</p>
-                                <p class="blog-tags__tag">Grid и Flex</p>
-                                <p class="blog-tags__tag">Типографика</p>
-                                <p class="blog-tags__tag">CSS-анимации</p>
-                                <p class="blog-tags__tag">SVG</p>
+                                <p class="blog-tags__tag" data-descr="Основные теги, разметка, семантика">HTML 5</p>
+                                <p class="blog-tags__tag" data-descr="Свойства, селекторы, верстка текста, изображений">CSS 3</p>
+                                <p class="blog-tags__tag" data-descr="Работа с переменными, миксинами, вложенными селекторами">LESS</p>
+                                <p class="blog-tags__tag" data-descr="Контент моих сайтов адаптируется под размер экрана">Отзывчивая верстка</p>
+                                <p class="blog-tags__tag" data-descr="Понимаю принципы методологии, устройство файловой системы, нейминга">БЭМ</p>
+                                <p class="blog-tags__tag" data-descr="Использую сетку и классы Bottstrap для позиционирования элементов">Bootstrap</p>
+                                <p class="blog-tags__tag" data-descr="Практические навыки верстки с помощью сеток и флексбоксов">Grid и Flex</p>
+                                <p class="blog-tags__tag" data-descr="Грамотное оформление текста, чтобы он был приятен глазу">Типографика</p>
+                                <p class="blog-tags__tag" data-descr="Просые анимации и трансформации, а также покадровая анимация">CSS-анимации</p>
+                                <p class="blog-tags__tag" data-descr="Работа с современным форматом изображений">SVG</p>
                             </div>
                         </div>
                         <div class="blog-card">
@@ -88,12 +88,12 @@
                                 <p>Оживляем страницу </p>
                             </div>
                             <div class="blog-tags">
-                                <p class="blog-tags__tag">Базовые конструкции</p>
-                                <p class="blog-tags__tag">Циклы</p>
-                                <p class="blog-tags__tag">События</p>
-                                <p class="blog-tags__tag">DOM</p>
-                                <p class="blog-tags__tag">Объекты</p>
-                                <p class="blog-tags__tag">Анимации</p>
+                                <p class="blog-tags__tag" data-descr="Переменные, массивы, типизация данных, математические операции">Базовые конструкции</p>
+                                <p class="blog-tags__tag" data-descr="Понимаю и применяю конструкции FOR, WHILE, SWITCH, IF">Циклы и условия</p>
+                                <p class="blog-tags__tag" data-descr="Клики, мышь, клавиши, взаимодействие с формами, а также работа с event">События</p>
+                                <p class="blog-tags__tag" data-descr="Понимаю принципы DOM и взаимодействие с элементами документа">DOM</p>
+                                <p class="blog-tags__tag" data-descr="Умею представлять системы и наборы данных в виде объектов">Объекты</p>
+                                <p class="blog-tags__tag" data-descr="Изучил setInterval() и requestAnimationFrame()">Анимации</p>
                             </div>
                         </div>
                         <div class="blog-card">
@@ -104,8 +104,8 @@
                                 <p>Не программирование, но близко</p>
                             </div>
                             <div class="blog-tags">
-                                <p class="blog-tags__tag">GIT-hub</p>
-                                <p class="blog-tags__tag">Поиск информации</p>
+                                <p class="blog-tags__tag" data-descr="Знаю, как создавать репозитории, загружать в них обновления и писать комментарии">GIT-hub</p>
+                                <p class="blog-tags__tag" data-descr="Я учил язык сам, поэтому поиск решения в Интернете для меня - не проблема">Поиск информации</p>
                             </div>
                         </div>
                         <div class="blog-card">
@@ -116,10 +116,10 @@
                                 <p>Soft-skills и прочее</p>
                             </div>
                             <div class="blog-tags">
-                                <p class="blog-tags__tag">Английский язык</p>
-                                <p class="blog-tags__tag">Проектный менеджмент</p>
-                                <p class="blog-tags__tag">SCRUM</p>
-                                <p class="blog-tags__tag">Таск-менеджеры</p>
+                                <p class="blog-tags__tag" data-descr="Свободно общаюсь и переписываюсь. Уровень - B2">Английский язык</p>
+                                <p class="blog-tags__tag" data-descr="Имею опыт управления командами, постановки и контроля задач">Проектный менеджмент</p>
+                                <p class="blog-tags__tag" data-descr="Работал по спринтам 2 года">SCRUM</p>
+                                <p class="blog-tags__tag" data-descr="Свободно чувствую себя в Битрикс и Трелло. Легко освою новую систему">Таск-менеджеры</p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,11 @@
                                 <p class="works-tags__tag works-tags__tag-bt">BT</p>
                             </div>
                             <p class="works-card__description"> Мой второй макет. При его создании я практиковался в создании интерактивных элементов - loader-а сайта, слайдера и переключателей</p>
-                            <a class="works-card__link" href="guitar-shop.html">Читать подробнее</a>
+                            <div>
+                                <a class="works-card__link" href="guitar-shop.html">Читать подробнее</a>
+                                <a class="works-card__link works-card__link_site" href="https://adammonro96.github.io/Guitar-site/">Открыть сайт</a>
+                            </div>
+                            
                         </div>
                     </section>
                     <section class="works-card">
@@ -166,7 +170,10 @@
                                 <p class="works-tags__tag works-tags__tag-bt">BT</p>
                             </div>
                             <p class="works-card__description">Одностраничный сайт рекламного агентства, выполненный по макету Фигма. Моя первая практика использования Java Script и методологии БЭМ</p>
-                            <a class="works-card__link" href="digital-agency.html">Читать подробнее</a>
+                            <div>
+                                <a class="works-card__link" href="digital-agency.html">Читать подробнее</a>
+                                <a class="works-card__link works-card__link_site" href="https://adammonro96.github.io/Digital-agency-page/">Открыть сайт</a>
+                            </div>
                         </div>
                     </section>
                 </div>

@@ -88,11 +88,27 @@
         font-weight: 700;
         min-width: 25%;
         text-align: center;
+        position: relative;
         @media (max-width:425px){
             font-size: 16px;
         }
     }
     &-tags__tag:hover{
         background-color: @secondary-color;
+    }
+    &-tags__tag:hover::after{
+        content: attr(data-descr);
+        display: block;
+        background: black;
+        position: absolute;
+        top:60px;
+        font-size: 14px;
+        padding:10px;
+        border-radius: 15px;
+        z-index: 100;
+        text-align: left;
+        font-weight: 400;
+        max-width: 600px;
+        min-width: 300px;
     }
 }

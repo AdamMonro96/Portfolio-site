@@ -58,10 +58,16 @@
         color: @secondary-color;
         text-decoration:underline;
         transition: 0.5s;
-        &:hover{
+        display: block;
+        width: 200px;
+        &:hover, &:active{
             color: @primary-color;
             text-decoration: none;
         }
+    }
+    &__link_site{
+    margin-top: 10px;
+    font-weight: 700;
     }
 }
 .works-tags{
